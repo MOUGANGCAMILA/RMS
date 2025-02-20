@@ -11,6 +11,7 @@
     <title>RESTAURANT</title>
 </head>
 <body>
+
     <header>
         <div class="header">
             <div class="headerbar">
@@ -39,7 +40,7 @@
                         </a>
                     </ol>
                 </div>
-                <div class="nav">
+                <div class="nav" id="dropdown-menu">
                     <ol>
                     
                         <a href="index.html"><li>HOME</li></a>
@@ -118,37 +119,70 @@
 
 
     </header>
-    <div class="home" style="height: 400px; padding-top: 80px;">
-        <h1 style="color: rgb(245, 144, 13);">ABOUT US</h1>
-        <P style="padding-top: 25px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate corporis illo velit ex deleniti voluptates, magnam ipsa mollitia sit aperiam. Minima voluptatum repudiandae accusantium a vero, deserunt, adipisci magnam quod repellat iure veniam possimus ex blanditiis corporis vel non sit unde voluptate, provident consequuntur hic exercitationem reprehenderit! Numquam esse nesciunt soluta exercitationem reiciendis ipsum, cumque blanditiis optio corporis ullam officiis nam quibusdam laboriosam, quisquam possimus fuga velit in saepe? Vel modi alias dignissimos, laudantium illum nesciunt sed officia impedit explicabo magnam natus aspernatur est porro dicta iure odio quas repudiandae deleniti rem. Rem accusantium dolor impedit soluta voluptatum numquam fugiat.
-            
-        </P>
+    <div class="home">
+        <div class="reservation-form">
+            <h3>Make a Reservation</h3>
+            <form id="reservationForm" action="submit_reservation.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" max="10" required>
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" min="09:00" max="22:00" required>
+                
+                <label for="notes">Special Notes:</label>
+                <textarea id="notes" name="notes"></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+
+        
+
+
+
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
 
-    <div class="footer">
-        <div class="footer-1">
-            <div class="logo">
-                <img src="images/dining-icon.svg" alt="">
+        <div class="footer">
+            <div class="footer-1">
+                <div class="logo">
+                    <img src="images/dining-icon.svg" alt="">
+                </div>
+                <div>
+                    <address>
+                        <p>Email: camilamougang@gmail.com</p>
+                        <p>youtube: foodie</p>
+                        <p>Mrs Camila Mougang, <br> My street, Molyko <br> Buea</p>
+                    </address>
+                </div>
             </div>
-            <div>
-                <address>
-                    <p>Email: camilamougang@gmail.com</p>
-                    <p>youtube: foodie</p>
-                    <p>Mrs Camila Mougang, <br> My street, Molyko <br> Buea</p>
-                </address>
-            </div> 
+            <div class="footer-2">
+                <img src="images/dining-icon.svg" alt="">
+                <h2>Powered by <em>Rich code</em></h2>
+            </div>
         </div>
-        <div class="footer-2">
-            <img src="images/dining-icon.svg" alt="">
-            <h2>Powered by <em>Rich code</em></h2>
-        </div>
-    </div>
-    <script src="app.js"></script>
+    
+        
+        <script src="app.js"></script>
+
+
+
+
+
+
+
 </body>
-</html>
+</html>        
